@@ -17,6 +17,7 @@ private void Pesan(java.awt.event.ActionEvent evt) {
         int diskon4 = 0;
         String Nama;
 //Proses
+
 //Nama Customer
 Nama = txtNama.getText();
         //Pilihan Kursi
@@ -29,6 +30,7 @@ Nama = txtNama.getText();
         } else if (jRadioButton4.isSelected ()) {
             noKursi = "4";
         }
+        
 //Pilihan Menu
     if (cbNasiGoreng.isSelected ()) {
         hrgNasiGoreng = 12000;
@@ -57,18 +59,4 @@ Nama = txtNama.getText();
     if (cbEsCampur.isSelected ()) {
         hrgEsCampur = 8000;
     }
-    
-    int jumlah_harga = hrgNasiGoreng + hrgNasiAyam + hrgNasiBebek + hrgNasiLele +hrgTahu + hrgTempe + hrgEsteh + hrgEsJeruk + hrgEsCampur;
-    
-    if (cbNasiAyam.isSelected() && cbTahu.isSelected())
-        diskon1 = 3;
-    if (cbNasiLele.isSelected() && cbTahu.isSelected())
-        diskon2 = 5;
-    if (cbNasiBebek.isSelected() && cbTempe.isSelected())
-        diskon3 = 2;
-    if (cbNasiAyam.isSelected() && cbTempe.isSelected())
-        diskon4 = 1;
-    int jumlah_diskon = diskon1 + diskon2 + diskon3 + diskon4;
-    
-    int total = jumlah_harga - ((jumlah_harga + jumlah_diskon)/100);
-    }
+}
