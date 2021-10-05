@@ -1,7 +1,7 @@
-private void Pesan(java.awt.event.ActionEvent evt) {                       
+    private void Pesan(java.awt.event.ActionEvent evt) {                       
         // TODO add your handling code here:
         //Variable dan Input
-        String noKursi = null;
+        String Meja = null;
         int hrgNasiGoreng = 0;
         int hrgNasiAyam = 0;
         int hrgNasiBebek = 0;
@@ -11,26 +11,20 @@ private void Pesan(java.awt.event.ActionEvent evt) {
         int hrgEsteh = 0;
         int hrgEsJeruk = 0;
         int hrgEsCampur = 0;
-        int diskon1 = 0;
-        int diskon2 = 0;
-        int diskon3 = 0;
-        int diskon4 = 0;
         String Nama;
-//Proses
 
 //Nama Customer
 Nama = txtNama.getText();
         //Pilihan Kursi
         if (jRadioButton1.isSelected()) {
-            noKursi = "1";
+            Meja = "01";
         } else if (jRadioButton2.isSelected ()) {
-            noKursi = "2";
+            Meja = "02";
         } else if (jRadioButton3.isSelected ()) {
-            noKursi = "3";
+            Meja = "03";
         } else if (jRadioButton4.isSelected ()) {
-            noKursi = "4";
-        }
-        
+            Meja = "04";
+            
 //Pilihan Menu
     if (cbNasiGoreng.isSelected ()) {
         hrgNasiGoreng = 12000;
